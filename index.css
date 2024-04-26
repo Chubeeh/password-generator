@@ -14,7 +14,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background: var(--grey-900);
+    background: gray;
 }
 h1 {
     font-family: var(--heading);
@@ -42,7 +42,7 @@ button {
 button>img {
     margin-right: 8px;
 }
-#create {
+#create-password {
     display: inline-flex;         
 }
 input {
