@@ -71,26 +71,3 @@ function randomPassword() {
 // Call the randomPassword function when the button is clicked
 createPassword.addEventListener("click", randomPassword);
 
-//ability to copy to clipboard
-// Copy generated password to clipboard
-function copyToClipboard(e) {
-    console.log("Clicked on password element");
-    let password = e.target.textContent;
-    navigator.clipboard.writeText(password).then(() => {
-        console.log("Password copied to clipboard successfully");
-    }).catch(err => {
-        console.error('Could not copy text: ', err);
-    });
-}
-
-// Attach click event listeners to password elements for copying to clipboard
-passwordElOne.addEventListener("click", function(e) {
-    console.log("Clicked on password element one");
-    copyToClipboard(e);
-});
-// Attach click event listeners to password elements for copying to clipboard
-// Attach click event listeners to password elements for copying to clipboard
-passwordElOne.addEventListener("click", copyToClipboard);
-passwordElTwo.addEventListener("click", copyToClipboard);
-passwordElThree.addEventListener("click", copyToClipboard);
-passwordElFour.addEventListener("click", copyToClipboard);
